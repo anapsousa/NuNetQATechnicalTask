@@ -1,0 +1,63 @@
+....DNS lookup result:
+12.1.168.192.in-addr.arpa       name = node_c.nunetqatechnicaltask_network_test.
+
+Authoritative answers can be found from:
+
+
+.DNS lookup result:
+12.1.168.192.in-addr.arpa       name = node_c.nunetqatechnicaltask_network_test.
+
+Authoritative answers can be found from:
+
+
+............
+Packets transmitted: 10, Packets received: 9, Success rate: 90%
+..
+iperf3 client output:
+Connecting to host 192.168.1.11, port 5201
+[  5] local 192.168.1.10 port 55968 connected to 192.168.1.11 port 5201
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec  7.88 MBytes  65.9 Mbits/sec  391   2.83 KBytes       
+[  5]   1.00-2.00   sec  2.25 MBytes  18.9 Mbits/sec  167   4.24 KBytes       
+[  5]   2.00-3.00   sec  5.38 MBytes  45.1 Mbits/sec  500   2.83 KBytes       
+[  5]   3.00-4.00   sec  5.00 MBytes  41.9 Mbits/sec  469   2.83 KBytes       
+[  5]   4.00-5.00   sec  0.00 Bytes  0.00 bits/sec   11   1.41 KBytes       
+[  5]   5.00-6.00   sec   896 KBytes  7.34 Mbits/sec  127   1.41 KBytes       
+[  5]   6.00-7.00   sec   896 KBytes  7.34 Mbits/sec   47   1.41 KBytes       
+[  5]   7.00-8.00   sec  0.00 Bytes  0.00 bits/sec    1   1.41 KBytes       
+[  5]   8.00-9.00   sec  6.75 MBytes  56.6 Mbits/sec  680   1.41 KBytes       
+[  5]   9.00-10.00  sec   896 KBytes  7.33 Mbits/sec   65   1.41 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-10.00  sec  29.9 MBytes  25.1 Mbits/sec  2458             sender
+[  5]   0.00-10.00  sec  28.4 MBytes  23.8 Mbits/sec                  receiver
+
+iperf Done.
+
+.
+iperf3 output:
+Connecting to host 192.168.1.11, port 5201
+[  5] local 192.168.1.10 port 47906 connected to 192.168.1.11 port 5201
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec  11.5 MBytes  96.3 Mbits/sec  864   1.41 KBytes       
+[  5]   1.00-2.00   sec  1.12 MBytes  9.44 Mbits/sec  105   11.3 KBytes       
+[  5]   2.00-3.00   sec  5.88 MBytes  49.3 Mbits/sec  414   1.41 KBytes       
+[  5]   3.00-4.00   sec  2.25 MBytes  18.9 Mbits/sec  250   7.07 KBytes       
+[  5]   4.00-5.00   sec  3.75 MBytes  31.5 Mbits/sec  322   1.41 KBytes       
+[  5]   5.00-6.00   sec  7.62 MBytes  64.0 Mbits/sec  618   4.24 KBytes       
+[  5]   6.00-7.00   sec   384 KBytes  3.15 Mbits/sec   58   1.41 KBytes       
+[  5]   7.00-8.00   sec  2.88 MBytes  24.1 Mbits/sec  195   2.83 KBytes       
+[  5]   8.00-9.00   sec  1.88 MBytes  15.7 Mbits/sec  197   1.41 KBytes       
+[  5]   9.00-10.00  sec  7.75 MBytes  65.0 Mbits/sec  496   1.41 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-10.00  sec  45.0 MBytes  37.7 Mbits/sec  3519             sender
+[  5]   0.00-10.00  sec  44.1 MBytes  37.0 Mbits/sec                  receiver
+
+iperf Done.
+
+.
+
+7 scenarios (7 passed)
+21 steps (21 passed)
+2m38.736s (executing steps: 2m38.711s)

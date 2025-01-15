@@ -1,0 +1,37 @@
+services:
+  node_a:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: node_a
+    privileged: true
+    networks:
+      network_test:
+        ipv4_address: 192.168.1.10
+
+  node_b:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: node_b
+    privileged: true
+    networks:
+      network_test:
+        ipv4_address: 192.168.1.11
+
+  node_c:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: node_c
+    privileged: true
+    networks:
+      network_test:
+        ipv4_address: 192.168.1.12
+
+networks:
+  network_test:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.1.0/24

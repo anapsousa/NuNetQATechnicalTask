@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.2.0",
+    "@types/cucumber": "^6.0.1",
+    "@types/node": "^22.10.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3",
+    "rimraf": "^3.0.2"
+  },
+  "scripts": {
+    "build": "rimraf ./build && tsc && npm run clean-build",
+    "clean-build": "rimraf ./build/features && mv ./build/src/* ./build && rmdir ./build/src",
+    "test": "cucumber-js -p default"
+  }
+}
