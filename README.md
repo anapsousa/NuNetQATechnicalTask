@@ -24,7 +24,6 @@ Next up, install docker (you can follow the instructions here: https://docs.dock
 
 You will then be able to see the docker images in your container. Go check it out. As you can see there’s 3 nodes running simultaneously that represent nodes of a small network.
 
-```docker run -v $(pwd):/app -w /app node:latest node ping_scripts.ts ```
 
 If you don't have it locally, you should add Cucumber to be able to understand and run the tests. Here's what you should install for this particular case of testing: 
 
